@@ -1,3 +1,4 @@
+
 // Create an array that contains the words in the sentence
 let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 
@@ -14,14 +15,31 @@ function addExcitement(theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-        buildMeUp += " " + theWordArray[i]
-        // Concatenate the new word onto buildMeUp
+    if (i % 12 === 3) {
+        buildMeUp += sentence[i] + "! "
+        console.log(buildMeUp + " " );
+    } 
 
-        // Print buildMeUp to the console
-        console.log(buildMeUp + "?");
+    else if  (i % 12 === 6) {
+        buildMeUp += sentence[i] + "! "
+        console.log(buildMeUp + " " );
+    } 
+
+
+    else if  (i % 12 === 9) {
+        buildMeUp += sentence[i] + "! "
+        console.log(buildMeUp + " " );
+    } 
+    
+
+    else {
+        buildMeUp += sentence[i]  +  " " 
+        console.log(buildMeUp);
     }
 
+    }
 }
 
+
 // Invoke the function and pass in the array
-addExcitement(sentence)
+addExcitement(sentence);
